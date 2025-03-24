@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- this is for making the webpage responsive: 
+            adjusting the webpage's width accroding to screen size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <!-- this is for connecting the css file -->
+        <link rel="stylesheet" href="style.css">
+        <!-- brought from google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="left">My Portfolio</div>
+                <div class="right">
+                    <!-- creates a list of bulleted elements -->
+                    <ul>
+                        <li><a href="/Practicing/HTML+CSS/">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi, My name is <span class="text-purple">Sunya</span>
+                    <div>I am a learner.</div>
+                    <span id="element"></span>
+                </div>
+                <div class="rightSection">
+                <img src="bg.png" alt="">
+                </div>
+            </section>
+
+            <section class="secondSection" id="projects">
+                <h1>Projects</h1>
+                <div class="projectTable">
+                    <div class="row">
+                        <div class="project">
+                            <h3><a href="https://github.com/1ochaku/Chatapp" target="_blank">Chat App</a></h3>
+                            <p>A simple user-server chat application. It provides user authentication (login/signup) with unique username and email registration. The application also includes features such as starting a new chat, deleting a chat, and logging out.</p>
+                        </div>
+                        <div class="project">
+                            <h3><a href="https://github.com/1ochaku/Rainfall-Prediction" target="_blank">Rainfall-Prediction</a></h3>
+                            <p>A Random Forest Classifier models to predict whether it will rain based on weather-related features.</p>
+                        </div>
+                        <div class="project">
+                            <h3><a href="https://github.com/1ochaku/Crypto-Tracker" target="_blank">Crypto Statistics Server</a></h3>
+                            <p>A server-side application built using Node.js, Express, and MongoDB that provides real-time cryptocurrency statistics by leveraging the CoinGecko API. This application tracks real-time data for Bitcoin, Matic-Network, and Ethereum.</p>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="project">
+                            <h3><a href="https://github.com/1ochaku/Portfolio-Tracker-App" target="_blank">Portfolio-Tracker-App</a></h3>
+                            <p>This application provides a basic feature to track the current portfolio value and add/edit/delete the stocks, also providing live current price data.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="thirdSection" id="contact">
+                <h1>Contact Me</h1>
+                <address>
+                    <p>Email Id: <a href="mailto:sunya22839@gmail.com">sunya22839@gmail.com</a></p>
+                    <!-- <p>Phone No: <a href="tel:+91xxxxxxxxxx">(+91) xxxxxxxxxx</a></p> -->
+                </address>
+            </section>
+        </main>
+
+        <!-- Loading the library from CDN -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+         <script>
+            var typed = new Typed('#element', {
+            strings: ['Loves Running.', 'Reads Fantasy Novels.', 'Writes Poems.', 'Likes To Asks Questions.'],
+            typeSpeed: 50,
+            backSpeed: 25,       // Speed to delete text
+            backDelay: 1000,     // Pause before deleting
+            loop: true,          // Keeps running forever!
+            showCursor: true,    // Shows the blinking cursor
+            cursorChar: '|',     // Character for cursor
+            });
+        </script>
+    </body>
+</html>
+</html>

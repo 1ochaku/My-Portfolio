@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(209, 198, 198);
+    color: black;
+}
+
+nav {
+    /* to apply the effects on all the nav component,
+    we need to make it display flex and then the contents can be adjusted
+    hence it converts to flexbox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(230, 218, 218);
+}
+
+nav ul {
+    display: flex;
+    justify-content: centre;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: rgb(57, 56, 56);
+}
+
+.left {
+    font-size: 1.6rem;
+}
+
+.right {
+    font-size: 1.3rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.firstSection > div {
+    width: 30%;
+}
+
+.firstSection .leftSection {
+    font-size: 3rem;
+}
+
+.firstSection .rightSection img {
+    height: 450px;
+    width: 550px;
+}
+
+.text-purple {
+    color:rgb(111, 43, 43);
+}
+
+/* NOTE: it's an id*/
+#element {
+    color: rgb(100, 40, 30);
+    font-size: 2.5rem;
+
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.secondSection h1 {
+    font-size: 2rem;
+}
+
+.thirdSection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.thirdSection h1 {
+    font-size:2rem;
+}
+
+.thirdSection address {
+    margin: 20px 0;
+}
+
+.thirdSection p {
+    font-size: 1.3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectTable {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.project {
+    background-color: rgb(230, 218, 218);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.project h3 a:hover {
+    color: rgb(57, 56, 56);
+}
+
+.project p {
+    line-height: 1.4;
+    color: #555;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    /* Lifts the box slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Slightly darker shadow */
+}
